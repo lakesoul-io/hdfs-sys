@@ -17,7 +17,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("cargo:rustc-link-search=native={java_home}/lib/amd64/server");
     println!("cargo:rustc-link-search=native={java_home}/jre/lib/server");
     println!("cargo:rustc-link-search=native={java_home}/jre/lib/amd64/server");
-    println!("cargo:rustc-link-search=native={java_home}/lib");
+    println!("cargo:rustc-link-search=native={java_home}\\lib");
     println!("cargo:rustc-link-lib=jvm");
 
     // Static link compiled `libhdfs.a`
